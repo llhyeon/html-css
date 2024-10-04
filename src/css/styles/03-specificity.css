@@ -1,0 +1,49 @@
+/* 부모에게 지정된 스타일이 자식 요소에게 물려지는 것을 '상속'이라고 한다. */
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 20px;
+  border: 10px solid green;
+  padding: 50px;
+  color: darkblue;
+}
+
+p {
+  color: silver;
+}
+
+/* 레이어 순서를 지정, 뒤에 있을수록 우선 순위이다. */
+@layer techit, likelion;
+
+@layer likelion {
+  p {
+    color: red;
+  }
+}
+@layer techit {
+  p {
+    /* layer로 정해진 순서로는 후순위였지만 !important 속성 부여 */
+    color: green !important;
+  }
+}
+
+/* 스타일이 겹칠 경우 부모로 상속받은 스타일보다 직접 지정된 스타일이 더 우선시된다. */
+/* h1 {
+  color: green;
+} */
+
+/* 같은 선택자로 겹칠 경우 더 나중에 선언한 스타일이 우선시된다. */
+/* p {
+  color: orange;
+}
+
+.likelion {
+  color: gray;
+}
+
+#school {
+  color: red;
+}
+
+#school.likelion {
+  color: gray;
+} */
