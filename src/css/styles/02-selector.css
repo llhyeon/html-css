@@ -69,12 +69,24 @@ p::first-letter {
 }
 
 /* 가상 클래스를 이용한 선택자 그룹화 */
-/* :is(h1, h2, h3, h4, h5, h6) span {
+/* is 선택자는 괄호 안의 우선순위를 따진다. */
+:is(h1, h2, h3, h4, h5, h6) span {
   background-color: salmon;
   color: blue;
-} */
+}
 
 :where(h1, h2, h3, h4, h5, h6) span {
   background-color: lightgreen;
   color: red;
+}
+
+/* 자식 또는 형제로 특정 태그를 갖는 부모 요소를 선택할 때 사용 */
+h6:has(+ p) {
+  border: solid 1px green;
+  padding: 10px;
+}
+
+p:has(> strong) {
+  border: 1px solid red;
+  padding: 10px;
 }
