@@ -1,0 +1,9 @@
+/* 줄바꿈을 할 경우 생기는 공백으로 인해 용량이 커져 성능에 영향을 미칠 수 있지만 
+그럼에도 줄바꿈을 하는 방식으로 작성하는 것을 권장 */
+body {
+  font-size: 1rem;
+  color: green;
+  font-style: noto serif;
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  /* sans-serif 글꼴은 뻗침이 없고, serif 계열의 글꼴은 뻗침이 있다. */
+}
