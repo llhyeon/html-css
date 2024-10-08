@@ -1,0 +1,44 @@
+@import "../../common/modern-reset.css";
+
+div {
+  padding: 10px;
+  font-size: 3rem;
+  border: 1px solid currentColor;
+}
+
+.static {
+  background: yellow;
+}
+
+.fixed {
+  background: hsl(250, 50%, 50%);
+  /* span 요소에 fixed 옵션을 주면 block 성격을 띈다 */
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+}
+.relative-wrapper {
+  position: relative;
+  inset-block-start: 50px;
+  inset-inline-start: 50px;
+}
+
+.absolute-wrapper {
+  position: absolute;
+}
+
+.absolute {
+  inline-size: 650px;
+  background: sandybrown;
+  position: absolute;
+  inset-inline-start: 100px;
+  inset-block-start: 0px;
+}
+
+.sticky {
+  background: aquamarine;
+  padding: 20px;
+  margin-block: 100px;
+  position: sticky;
+  inset-block-start: 0;
+}
