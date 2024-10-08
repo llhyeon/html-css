@@ -1,0 +1,35 @@
+@import "../../common/modern-reset.css";
+
+body {
+  margin: 50px;
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  /* 컬러와 이미지는 중첩으로 사용할 수 있다 */
+  background-color: rgb(233, 233, 150);
+  background-image: url("../../assets/images/rabbit.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100px 120px;
+  background-attachment: fixed;
+}
+
+.bg-text-gradient {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background-color: lightgreen;
+  margin-block: 20px;
+  background-image: linear-gradient(red, orange, green, darkblue, purple);
+  /* 글자에 그레디언트 속성을 부여, 글자 색상을 투명으로 바꿔야함 */
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-origin {
+  inline-size: 800px;
+  margin-inline: auto;
+  /* background-color: pink;
+  background-image: url("../../assets/thumbnail/meeting-room.jpg");
+  background-origin: border-box; */
+  padding: 20px;
+  border: 20px solid hsla(350, 50%, 50%, 0.2);
+  background: salmon url("../../assets/thumbnail/meeting-room.jpg") border-box no-repeat 20px 20px / cover;
+}
