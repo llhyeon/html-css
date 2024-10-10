@@ -1,0 +1,29 @@
+@import "../../common/best-reset.css";
+
+/* scroll-behavior: smooth 속성을 사용하면 스크롤이 부드럽게 된다 */
+
+.scroll-wrapper {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  inline-size: 100%;
+  block-size: 100dvh;
+}
+
+.section-01 {
+  background-color: yellow;
+}
+
+.section-02 {
+  background-color: pink;
+}
+
+.section-03 {
+  background-color: sandybrown;
+}
+
+.section-04 {
+  background-color: aqua;
+}
