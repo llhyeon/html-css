@@ -1,0 +1,25 @@
+.thumbnail-card {
+  --size: 60px;
+  --gap: var(--spacing-sm, 10px);
+  --thumbnail-text-color: var(--silver, #878787);
+
+  display: flow-root;
+
+  .thumbnail-card__img {
+    inline-size: var(--size);
+    block-size: var(--size);
+    float: inline-start;
+    margin-inline-end: var(--gap);
+  }
+
+  .thumbnail-card__caption {
+    color: var(--thumbnail-text-color);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+
+    strong {
+      font-size: 0.9375rem;
+      font-weight: 400;
+    }
+  }
+}
