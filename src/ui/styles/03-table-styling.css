@@ -1,0 +1,36 @@
+@import "../../common/best-reset.css";
+@import "../../common/a11y.css";
+@import "../../common/theme.css";
+@import "../../common/base.css";
+@import "../../common/components/thumbnail-card.css";
+
+.ediya-container {
+  margin: var(--spacing-md);
+}
+
+.ediya-news {
+  --text-color: var(--deep-blue, #24388d);
+  --border-thick: 2px;
+  --border-thin: 1px;
+  --border-color: currentColor;
+  --cell-spacing-head: var(--spacing-sm);
+  --cell-spacing-body: var(--spacing-md);
+
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  inline-size: 710px;
+  color: var(--text-color);
+  border-block: var(--border-thick) solid var(--border-color);
+
+  tbody tr {
+    border-block-start: var(--border-thin) solid var(--border-color);
+  }
+
+  td {
+    padding: var(--cell-spacing-body);
+    &:not(:nth-child(2)) {
+      text-align: center;
+    }
+  }
+}
